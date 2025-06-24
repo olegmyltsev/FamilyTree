@@ -1,0 +1,353 @@
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+
+<style>
+div.box {
+  padding:          3px;
+  font-size:        10px;
+  font-family:      Arial,Helvetica Neue,Helvetica,sans-serif;
+  width:            140px;
+  position:         absolute;
+  z-index:          0;
+  box-shadow:       3px 3px 3px #808080;
+}
+div.personbox_m {  background-color: #cda476;
+  border:           1px solid black;
+}
+div.personbox_w {
+  background-color: #efdfcf;
+  border:           1px solid white;
+}
+div#main {
+  z-index:           -10; 
+  background-image:  url('bg.jpg');
+  background-repeat: no-repeat;
+}
+</style>
+</head>
+
+<body style='margin:0;'>
+<div id='main' style='width:4530; height:690; background-size:4530px 690px;'>
+<canvas id='canvas' width='4530' height='690'></canvas>
+<script type='text/javascript'>
+<!--
+function draw()
+{
+  const canvas = document.getElementById('canvas');  const ctx = canvas.getContext('2d');  ctx.fillStyle = '#ffffff';
+  ctx.strokeStyle = '#ffffff';
+  ctx.font = 'bold 9pt monospace';
+  ctx.lineWidth = 1.0;
+  ctx.beginPath();  ctx.moveTo(10.5, 65);  ctx.lineTo(10.5, 615);
+  ctx.moveTo(4520.5, 65);  ctx.lineTo(4520.5, 615);
+  ctx.moveTo(10, 83.5);  ctx.lineTo(20, 83.5);  ctx.fillText('1965',22,87);  ctx.moveTo(4520, 83.5);  ctx.lineTo(4510, 83.5);  ctx.fillText('1965',4477,87);  ctx.moveTo(10, 123.5);  ctx.lineTo(20, 123.5);  ctx.fillText('1970',22,127);  ctx.moveTo(4520, 123.5);  ctx.lineTo(4510, 123.5);  ctx.fillText('1970',4477,127);  ctx.moveTo(10, 163.5);  ctx.lineTo(20, 163.5);  ctx.fillText('1975',22,167);  ctx.moveTo(4520, 163.5);  ctx.lineTo(4510, 163.5);  ctx.fillText('1975',4477,167);  ctx.moveTo(10, 203.5);  ctx.lineTo(20, 203.5);  ctx.fillText('1980',22,207);  ctx.moveTo(4520, 203.5);  ctx.lineTo(4510, 203.5);  ctx.fillText('1980',4477,207);  ctx.moveTo(10, 243.5);  ctx.lineTo(20, 243.5);  ctx.fillText('1985',22,247);  ctx.moveTo(4520, 243.5);  ctx.lineTo(4510, 243.5);  ctx.fillText('1985',4477,247);  ctx.moveTo(10, 283.5);  ctx.lineTo(20, 283.5);  ctx.fillText('1990',22,287);  ctx.moveTo(4520, 283.5);  ctx.lineTo(4510, 283.5);  ctx.fillText('1990',4477,287);  ctx.moveTo(10, 323.5);  ctx.lineTo(20, 323.5);  ctx.fillText('1995',22,327);  ctx.moveTo(4520, 323.5);  ctx.lineTo(4510, 323.5);  ctx.fillText('1995',4477,327);  ctx.moveTo(10, 363.5);  ctx.lineTo(20, 363.5);  ctx.fillText('2000',22,367);  ctx.moveTo(4520, 363.5);  ctx.lineTo(4510, 363.5);  ctx.fillText('2000',4477,367);  ctx.moveTo(10, 403.5);  ctx.lineTo(20, 403.5);  ctx.fillText('2005',22,407);  ctx.moveTo(4520, 403.5);  ctx.lineTo(4510, 403.5);  ctx.fillText('2005',4477,407);  ctx.moveTo(10, 443.5);  ctx.lineTo(20, 443.5);  ctx.fillText('2010',22,447);  ctx.moveTo(4520, 443.5);  ctx.lineTo(4510, 443.5);  ctx.fillText('2010',4477,447);  ctx.moveTo(10, 483.5);  ctx.lineTo(20, 483.5);  ctx.fillText('2015',22,487);  ctx.moveTo(4520, 483.5);  ctx.lineTo(4510, 483.5);  ctx.fillText('2015',4477,487);  ctx.moveTo(10, 523.5);  ctx.lineTo(20, 523.5);  ctx.fillText('2020',22,527);  ctx.moveTo(4520, 523.5);  ctx.lineTo(4510, 523.5);  ctx.fillText('2020',4477,527);  ctx.moveTo(10, 563.5);  ctx.lineTo(20, 563.5);  ctx.fillText('2025',22,567);  ctx.moveTo(4520, 563.5);  ctx.lineTo(4510, 563.5);  ctx.fillText('2025',4477,567);
+  ctx.stroke();
+  ctx.closePath();
+  ctx.strokeStyle = '#000000';
+  ctx.lineWidth = 1.5;
+  ctx.beginPath();
+  ctx.moveTo(145.0, 251);  ctx.lineTo(2265.0, 175);
+  ctx.moveTo(2265.0, 80);  ctx.lineTo(2265.0, 175);
+  ctx.moveTo(145.0, 411);  ctx.lineTo(145.0, 351);
+  ctx.moveTo(145.0, 256);  ctx.lineTo(145.0, 351);
+  ctx.moveTo(305.0, 419);  ctx.lineTo(145.0, 351);
+  ctx.moveTo(145.0, 256);  ctx.lineTo(145.0, 351);
+  ctx.moveTo(145.0, 555);  ctx.lineTo(145.0, 351);
+  ctx.moveTo(145.0, 256);  ctx.lineTo(145.0, 351);
+  ctx.moveTo(1105.0, 259);  ctx.lineTo(2265.0, 175);
+  ctx.moveTo(2265.0, 80);  ctx.lineTo(2265.0, 175);
+  ctx.moveTo(465.0, 419);  ctx.lineTo(1105.0, 359);
+  ctx.moveTo(1105.0, 264);  ctx.lineTo(1105.0, 359);
+  ctx.moveTo(625.0, 427);  ctx.lineTo(1105.0, 359);
+  ctx.moveTo(1105.0, 264);  ctx.lineTo(1105.0, 359);
+  ctx.moveTo(785.0, 443);  ctx.lineTo(1105.0, 359);
+  ctx.moveTo(1105.0, 264);  ctx.lineTo(1105.0, 359);
+  ctx.moveTo(945.0, 459);  ctx.lineTo(1105.0, 359);
+  ctx.moveTo(1105.0, 264);  ctx.lineTo(1105.0, 359);
+  ctx.moveTo(1105.0, 459);  ctx.lineTo(1105.0, 359);
+  ctx.moveTo(1105.0, 264);  ctx.lineTo(1105.0, 359);
+  ctx.moveTo(1265.0, 475);  ctx.lineTo(1105.0, 359);
+  ctx.moveTo(1105.0, 264);  ctx.lineTo(1105.0, 359);
+  ctx.moveTo(1425.0, 483);  ctx.lineTo(1105.0, 359);
+  ctx.moveTo(1105.0, 264);  ctx.lineTo(1105.0, 359);
+  ctx.moveTo(1585.0, 523);  ctx.lineTo(1105.0, 359);
+  ctx.moveTo(1105.0, 264);  ctx.lineTo(1105.0, 359);
+  ctx.moveTo(1745.0, 555);  ctx.lineTo(1105.0, 359);
+  ctx.moveTo(1105.0, 264);  ctx.lineTo(1105.0, 359);
+  ctx.moveTo(2065.0, 275);  ctx.lineTo(2265.0, 175);
+  ctx.moveTo(2265.0, 80);  ctx.lineTo(2265.0, 175);
+  ctx.moveTo(1905.0, 491);  ctx.lineTo(2065.0, 375);
+  ctx.moveTo(2065.0, 280);  ctx.lineTo(2065.0, 375);
+  ctx.moveTo(2065.0, 499);  ctx.lineTo(2065.0, 375);
+  ctx.moveTo(2065.0, 280);  ctx.lineTo(2065.0, 375);
+  ctx.moveTo(2225.0, 523);  ctx.lineTo(2065.0, 375);
+  ctx.moveTo(2065.0, 280);  ctx.lineTo(2065.0, 375);
+  ctx.moveTo(2225.0, 283);  ctx.lineTo(2265.0, 175);
+  ctx.moveTo(2265.0, 80);  ctx.lineTo(2265.0, 175);
+  ctx.moveTo(2545.0, 299);  ctx.lineTo(2265.0, 175);
+  ctx.moveTo(2265.0, 80);  ctx.lineTo(2265.0, 175);
+  ctx.moveTo(2385.0, 491);  ctx.lineTo(2545.0, 399);
+  ctx.moveTo(2545.0, 304);  ctx.lineTo(2545.0, 399);
+  ctx.moveTo(2545.0, 515);  ctx.lineTo(2545.0, 399);
+  ctx.moveTo(2545.0, 304);  ctx.lineTo(2545.0, 399);
+  ctx.moveTo(2705.0, 531);  ctx.lineTo(2545.0, 399);
+  ctx.moveTo(2545.0, 304);  ctx.lineTo(2545.0, 399);
+  ctx.moveTo(2705.0, 315);  ctx.lineTo(2265.0, 175);
+  ctx.moveTo(2265.0, 80);  ctx.lineTo(2265.0, 175);
+  ctx.moveTo(2945.0, 331);  ctx.lineTo(2265.0, 175);
+  ctx.moveTo(2265.0, 80);  ctx.lineTo(2265.0, 175);
+  ctx.moveTo(2865.0, 515);  ctx.lineTo(2945.0, 431);
+  ctx.moveTo(2945.0, 336);  ctx.lineTo(2945.0, 431);
+  ctx.moveTo(3025.0, 547);  ctx.lineTo(2945.0, 431);
+  ctx.moveTo(2945.0, 336);  ctx.lineTo(2945.0, 431);
+  ctx.moveTo(3345.0, 339);  ctx.lineTo(2265.0, 175);
+  ctx.moveTo(2265.0, 80);  ctx.lineTo(2265.0, 175);
+  ctx.moveTo(3185.0, 523);  ctx.lineTo(3345.0, 439);
+  ctx.moveTo(3345.0, 344);  ctx.lineTo(3345.0, 439);
+  ctx.moveTo(3345.0, 539);  ctx.lineTo(3345.0, 439);
+  ctx.moveTo(3345.0, 344);  ctx.lineTo(3345.0, 439);
+  ctx.moveTo(3505.0, 555);  ctx.lineTo(3345.0, 439);
+  ctx.moveTo(3345.0, 344);  ctx.lineTo(3345.0, 439);
+  ctx.moveTo(3745.0, 347);  ctx.lineTo(2265.0, 175);
+  ctx.moveTo(2265.0, 80);  ctx.lineTo(2265.0, 175);
+  ctx.moveTo(3665.0, 555);  ctx.lineTo(3745.0, 447);
+  ctx.moveTo(3745.0, 352);  ctx.lineTo(3745.0, 447);
+  ctx.moveTo(3825.0, 555);  ctx.lineTo(3745.0, 447);
+  ctx.moveTo(3745.0, 352);  ctx.lineTo(3745.0, 447);
+  ctx.moveTo(3905.0, 363);  ctx.lineTo(2265.0, 175);
+  ctx.moveTo(2265.0, 80);  ctx.lineTo(2265.0, 175);
+  ctx.moveTo(4065.0, 379);  ctx.lineTo(2265.0, 175);
+  ctx.moveTo(2265.0, 80);  ctx.lineTo(2265.0, 175);
+  ctx.moveTo(4065.0, 555);  ctx.lineTo(4065.0, 479);
+  ctx.moveTo(4065.0, 384);  ctx.lineTo(4065.0, 479);
+  ctx.moveTo(4225.0, 395);  ctx.lineTo(2265.0, 175);
+  ctx.moveTo(2265.0, 80);  ctx.lineTo(2265.0, 175);
+  ctx.moveTo(4385.0, 427);  ctx.lineTo(2265.0, 175);
+  ctx.moveTo(2265.0, 80);  ctx.lineTo(2265.0, 175);
+
+  ctx.stroke();
+  ctx.closePath();
+}
+draw();
+//-->
+</script>
+<div class='box personbox_w' id='I0001' style='left:2195px;top:75px;'>
+<b>Вера Евгеньевна</b>
+<br><b>Красовский</b>
+<br>&#42; 1964-08-01 
+<hr><b>Сергей Мыльцев</b>
+<br>&#42; 1963-09-20 
+<div style='position:absolute;top:-12px;right:0px;'>I0001</div></div>
+<div class='box personbox_w' id='I0002' style='left:75px;top:251px;'>
+<b>Надежда Сергеевна</b>
+<br><b>Мыльцев</b>
+<br>&#42; 1986-09-01 
+<hr><b>Dwight Waldner</b>
+<br>&#42; 1983-12-07 
+<div style='position:absolute;top:-12px;right:0px;'>I0002</div></div>
+<div class='box personbox_w' id='I0038' style='left:75px;top:411px;'>
+<b>Susanna</b>
+<br><b>Waldner</b>
+<br>&#42; 2006-09-12 
+<div style='position:absolute;top:-12px;right:0px;'>I0038</div></div>
+<div class='box personbox_m' id='I0039' style='left:235px;top:419px;'>
+<b>Timothy</b>
+<br><b>Waldner</b>
+<br>&#42; 2007-12-28 
+<div style='position:absolute;top:-12px;right:0px;'>I0039</div></div>
+<div class='box personbox_w' id='I0040' style='left:75px;top:555px;'>
+<b>Elianna Victoria</b>
+<br><b>Waldner</b>
+<br>&#42; 2024-09-05 
+<div style='position:absolute;top:-12px;right:0px;'>I0040</div></div>
+<div class='box personbox_w' id='I0003' style='left:1035px;top:259px;'>
+<b>Любовь Сергеевна</b>
+<br><b>Мыльцев</b>
+<br>&#42; 1987-10-11 
+<hr><b>Данила Игоревич Кеструль</b>
+<br>&#42; 1995-01-19 
+<div style='position:absolute;top:-12px;right:0px;'>I0003</div></div>
+<div class='box personbox_w' id='I0042' style='left:395px;top:419px;'>
+<b>Emma</b>
+<br><b>Кеструль</b>
+<br>&#42; 2007-05-29 
+<div style='position:absolute;top:-12px;right:0px;'>I0042</div></div>
+<div class='box personbox_m' id='I0043' style='left:555px;top:427px;'>
+<b>Ezekil</b>
+<br><b>Кеструль</b>
+<br>&#42; 2008-11-27 
+<div style='position:absolute;top:-12px;right:0px;'>I0043</div></div>
+<div class='box personbox_m' id='I0044' style='left:715px;top:443px;'>
+<b>Моисей</b>
+<br><b>Кеструль</b>
+<br>&#42; 2010-11-04 
+<div style='position:absolute;top:-12px;right:0px;'>I0044</div></div>
+<div class='box personbox_m' id='I0045' style='left:875px;top:459px;'>
+<b>Jesse</b>
+<br><b>Кеструль</b>
+<br>&#42; 2012-01-01 
+<div style='position:absolute;top:-12px;right:0px;'>I0045</div></div>
+<div class='box personbox_w' id='I0046' style='left:1035px;top:459px;'>
+<b>Hadassa</b>
+<br><b>Кеструль</b>
+<br>&#42; 2012-01-01 
+<div style='position:absolute;top:-12px;right:0px;'>I0046</div></div>
+<div class='box personbox_w' id='I0047' style='left:1195px;top:475px;'>
+<b>Naomi</b>
+<br><b>Кеструль</b>
+<br>&#42; 2014-07-22 
+<div style='position:absolute;top:-12px;right:0px;'>I0047</div></div>
+<div class='box personbox_m' id='I0048' style='left:1355px;top:483px;'>
+<b>Benjamine</b>
+<br><b>Кеструль</b>
+<br>&#42; 2015-08-18 
+<div style='position:absolute;top:-12px;right:0px;'>I0048</div></div>
+<div class='box personbox_w' id='I0049' style='left:1515px;top:523px;'>
+<b>Сарра Даниловна</b>
+<br><b>Кеструль</b>
+<br>&#42; 2020-05-26 
+<div style='position:absolute;top:-12px;right:0px;'>I0049</div></div>
+<div class='box personbox_m' id='I0050' style='left:1675px;top:555px;'>
+<b>Лев Данилович</b>
+<br><b>Кеструль</b>
+<br>&#42; 2024-11-18 
+<div style='position:absolute;top:-12px;right:0px;'>I0050</div></div>
+<div class='box personbox_m' id='I0004' style='left:1995px;top:275px;'>
+<b>Александр Сергеевич</b>
+<br><b>Мыльцев</b>
+<br>&#42; 1989-01-07 
+<hr><b>Мария Анатольевна Лангинен</b>
+<br>&#42; 1989-08-02 
+<div style='position:absolute;top:-12px;right:0px;'>I0004</div></div>
+<div class='box personbox_m' id='I0016' style='left:1835px;top:491px;'>
+<b>Филип Александрович</b>
+<br><b>Мыльцев</b>
+<br>&#42; 2016-11-02 
+<div style='position:absolute;top:-12px;right:0px;'>I0016</div></div>
+<div class='box personbox_m' id='I0017' style='left:1995px;top:499px;'>
+<b>Ян Александрович</b>
+<br><b>Мыльцев</b>
+<br>&#42; 2017-02-01 
+<div style='position:absolute;top:-12px;right:0px;'>I0017</div></div>
+<div class='box personbox_m' id='I0018' style='left:2155px;top:523px;'>
+<b>Николай Александрович</b>
+<br><b>Мыльцев</b>
+<br>&#42; 2020-03-26 
+<div style='position:absolute;top:-12px;right:0px;'>I0018</div></div>
+<div class='box personbox_w' id='I0005' style='left:2155px;top:283px;'>
+<b>Татьяна Сергеевна</b>
+<br><b>Мыльцев</b>
+<br>&#42; 1990-02-25 
+<div style='position:absolute;top:-12px;right:0px;'>I0005</div></div>
+<div class='box personbox_w' id='I0006' style='left:2475px;top:299px;'>
+<b>Анна Сергеевна</b>
+<br><b>Мыльцев</b>
+<br>&#42; 1992-11-30 
+<hr><b>Марк Александрович Тарконен</b>
+<br>&#42; 1991-12-02 
+<div style='position:absolute;top:-12px;right:0px;'>I0006</div></div>
+<div class='box personbox_w' id='I0020' style='left:2315px;top:491px;'>
+<b>Мария Марковна</b>
+<br><b>Тарконен</b>
+<br>&#42; 2016-11-16 
+<div style='position:absolute;top:-12px;right:0px;'>I0020</div></div>
+<div class='box personbox_m' id='I0021' style='left:2475px;top:515px;'>
+<b>Пётр Маркович</b>
+<br><b>Тарконен</b>
+<br>&#42; 2019-12-27 
+<div style='position:absolute;top:-12px;right:0px;'>I0021</div></div>
+<div class='box personbox_m' id='I0022' style='left:2635px;top:531px;'>
+<b>Илья Маркович</b>
+<br><b>Тарконен</b>
+<br>&#42; 2021-01-09 
+<div style='position:absolute;top:-12px;right:0px;'>I0022</div></div>
+<div class='box personbox_w' id='I0007' style='left:2635px;top:315px;'>
+<b>Лия Сергеевна</b>
+<br><b>Мыльцев</b>
+<br>&#42; 1994-07-15 
+<div style='position:absolute;top:-12px;right:0px;'>I0007</div></div>
+<div class='box personbox_m' id='I0008' style='left:2875px;top:331px;'>
+<b>Павел Сергеевич</b>
+<br><b>Мыльцев</b>
+<br>&#42; 1996-03-27 
+<hr><b>Арина Воскобойникова</b>
+<br>&#42; 1997-12-12 
+<div style='position:absolute;top:-12px;right:0px;'>I0008</div></div>
+<div class='box personbox_w' id='I0024' style='left:2795px;top:515px;'>
+<b>Елизавета Павловна</b>
+<br><b>Мыльцев</b>
+<br>&#42; 2019-09-22 
+<div style='position:absolute;top:-12px;right:0px;'>I0024</div></div>
+<div class='box personbox_m' id='I0025' style='left:2955px;top:547px;'>
+<b>Эрик Павлович</b>
+<br><b>Мыльцев</b>
+<br>&#42; 2023-09-30 
+<div style='position:absolute;top:-12px;right:0px;'>I0025</div></div>
+<div class='box personbox_m' id='I0009' style='left:3275px;top:339px;'>
+<b>Евгений Сергеевич</b>
+<br><b>Мыльцев</b>
+<br>&#42; 1997-05-28 
+<hr><b>Галина Андреевна Канева</b>
+<br>&#42; 1998-08-29 
+<div style='position:absolute;top:-12px;right:0px;'>I0009</div></div>
+<div class='box personbox_m' id='I0027' style='left:3115px;top:523px;'>
+<b>Андрей Евгениевич</b>
+<br><b>Мыльцев</b>
+<br>&#42; 2020-11-28 
+<div style='position:absolute;top:-12px;right:0px;'>I0027</div></div>
+<div class='box personbox_w' id='I0028' style='left:3275px;top:539px;'>
+<b>Вероника Евгениевна</b>
+<br><b>Мыльцев</b>
+<br>&#42; 2022-06-01 
+<div style='position:absolute;top:-12px;right:0px;'>I0028</div></div>
+<div class='box personbox_w' id='I0029' style='left:3435px;top:555px;'>
+<b>Алина Евгениевна</b>
+<br><b>Мыльцев</b>
+<br>&#42; 2024-09-06 
+<div style='position:absolute;top:-12px;right:0px;'>I0029</div></div>
+<div class='box personbox_m' id='I0010' style='left:3675px;top:347px;'>
+<b>Пётр Сергеевич</b>
+<br><b>Мыльцев</b>
+<br>&#42; 1998-09-15 
+<hr><b>Любовь Вениаминовна Глушец</b>
+<br>&#42; 1998-03-10 
+<div style='position:absolute;top:-12px;right:0px;'>I0010</div></div>
+<div class='box personbox_m' id='I0031' style='left:3595px;top:555px;'>
+<b>Георгий Петрович</b>
+<br><b>Мыльцев</b>
+<br>&#42; 2024-06-13 
+<div style='position:absolute;top:-12px;right:0px;'>I0031</div></div>
+<div class='box personbox_m' id='I0032' style='left:3755px;top:555px;'>
+<b>Юрий Петрович</b>
+<br><b>Мыльцев</b>
+<br>&#42; 2024-06-13 
+<div style='position:absolute;top:-12px;right:0px;'>I0032</div></div>
+<div class='box personbox_m' id='I0011' style='left:3835px;top:363px;'>
+<b>Сергей Сергеевич</b>
+<br><b>Мыльцев</b>
+<br>&#42; 2000-01-31 
+<div style='position:absolute;top:-12px;right:0px;'>I0011</div></div>
+<div class='box personbox_m' id='I0012' style='left:3995px;top:379px;'>
+<b>Иван Сергеевич</b>
+<br><b>Мыльцев</b>
+<br>&#42; 2002-03-27 
+<hr><b>Валерия Валерьевна Кривцова</b>
+<br>&#42; 2003-07-18 
+<div style='position:absolute;top:-12px;right:0px;'>I0012</div></div>
+<div class='box personbox_m' id='I0035' style='left:3995px;top:555px;'>
+<b>Аарон Иванович</b>
+<br><b>Мыльцев</b>
+<br>&#42; 2024-06-03 
+<div style='position:absolute;top:-12px;right:0px;'>I0035</div></div>
+<div class='box personbox_m' id='I0013' style='left:4155px;top:395px;'>
+<b>Михаил Сергеевич</b>
+<br><b>Мыльцев</b>
+<br>&#42; 2004-08-27 
+<div style='position:absolute;top:-12px;right:0px;'>I0013</div></div>
+<div class='box personbox_m' id='I0014' style='left:4315px;top:427px;'>
+<b>Олег Сергеевич</b>
+<br><b>Мыльцев</b>
+<br>&#42; 2008-05-11 
+<div style='position:absolute;top:-12px;right:0px;'>I0014</div></div>
+</body>
+</html>
